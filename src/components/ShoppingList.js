@@ -14,7 +14,7 @@ const foodItems = [
 
 const ShoppingList = () => {
 const [items, setItems] = useState(foodItems)
-console.log('items',items)
+
     return (
         <div>
             <h4>Shopping List</h4>
@@ -22,7 +22,7 @@ console.log('items',items)
                              color="success"
                              size="sm"
                              onClick={()=>{
-                                 const name = prompt('Enter your choice')
+                                 const name = prompt('Add your shopping List')
                                  if(name){
                                     setItems([...items, {name, id: uuid()}])
                                  }
