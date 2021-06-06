@@ -32,8 +32,8 @@ console.log('items',items)
                              </Button>
             {items.map(({id, name}) => {
                 return (
-                    <ListGroup className="list-group">
-                         <ListGroupItem>
+                    <ListGroup className="list-group" key={id}>
+                         <ListGroupItem key={id}>
                              <Button 
                              className="remove-btn"
                              color="danger"
