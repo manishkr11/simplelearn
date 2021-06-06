@@ -2,6 +2,23 @@
   text-align: center;
 }
 
+
+.list-group{
+  width: 30%;
+  position: relative;
+  right: -35%;  
+}
+
+.remove-btn{
+  margin-right: 10px;
+  float: left;
+}
+
+.add-btn{
+  margin: 10px;
+}
+
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
