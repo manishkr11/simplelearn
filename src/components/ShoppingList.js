@@ -18,13 +18,14 @@ console.log('items',items)
     return (
         <div>
             <h4>Shopping List</h4>
-            <Button 
-                             className="add-btn"
+            <Button  className="add-btn"
                              color="success"
                              size="sm"
                              onClick={()=>{
                                  const name = prompt('Enter your choice')
-                                 setItems([...items,{name,id:uuid()}])
+                                 if(name){
+                                    setItems([...items, {name, id: uuid()}])
+                                 }
                              }}
                              > 
                                 Add +
